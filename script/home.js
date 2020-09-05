@@ -48,7 +48,7 @@ fetch('product.json')
          if(element.sale==true){
              if(element.rating==""){element.rating=3.6}
             saleContiner.innerHTML=saleContiner.innerHTML+`
-            <div class="sale-box" onclick="redirectPoductInfo(this)">
+            <div class="sale-box" onclick="redirectProductInfo(this)">
                             <img src="${element.picture}" class="sale-image">
                             <span class="sale-name">${element.name}</span>
                         <div>
@@ -68,3 +68,13 @@ window.ontouchstart= () =>{
 }
 
 
+
+// render product info
+
+let hiddenFormInfo = document.getElementById('hiddenFormInfo')
+let hiddenInputInfo = document.getElementById('hiddenInputInfo')
+function redirectProductInfo(element){
+    // console.log(element.children[1].innerHTML)
+    hiddenInputInfo.value=element.children[1].innerHTML
+    hiddenFormInfo.submit()
+}

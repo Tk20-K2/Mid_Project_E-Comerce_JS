@@ -20,7 +20,7 @@ fetch('product.json')
              categoryOfProduct = element.subCategory
              genderOfProduct = element.category
             searchContentContainer.innerHTML=searchContentContainer.innerHTML+`
-            <div class="product-box" onclick="redirectPoductInfo(this)">
+            <div class="product-box" onclick="redirectProductInfo(this)">
                             <img src="${element.picture}" class="product-image">
                             <span class="product-name">${element.name}</span>
                         <div>
@@ -44,7 +44,7 @@ fetch('product.json')
              if(element.subCategory==categoryOfProduct && element.category == genderOfProduct){
                  if(element.rating==""){element.rating=3.6}
                 searchContentContainer.innerHTML=searchContentContainer.innerHTML+`
-                <div class="product-box" onclick="redirectPoductInfo(this)" style="display:none;">
+                <div class="product-box" onclick="redirectProductInfo(this)" style="display:none;">
                                 <img src="${element.picture}" class="product-image">
                                 <span class="product-name">${element.name}</span>
                             <div>
@@ -64,3 +64,14 @@ fetch('product.json')
           });
 })
 
+
+
+// render product info
+
+let hiddenFormInfo = document.getElementById('hiddenFormInfo')
+let hiddenInputInfo = document.getElementById('hiddenInputInfo')
+function redirectProductInfo(element){
+    // console.log(element.children[1].innerHTML)
+    hiddenInputInfo.value=element.children[1].innerHTML
+    hiddenFormInfo.submit()
+}
