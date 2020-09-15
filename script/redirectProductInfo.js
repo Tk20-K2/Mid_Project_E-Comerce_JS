@@ -1,3 +1,4 @@
+
 let imageSrc
 // fetch product code
 

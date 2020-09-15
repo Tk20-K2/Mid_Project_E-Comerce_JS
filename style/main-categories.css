@@ -1,0 +1,101 @@
+
+.sub-category-container{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.sub-categories-card{
+    max-width: 27vw;
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    padding-bottom: 10px;
+    border: 1px solid rgb(230, 225, 225);
+    /* box-shadow: 2px 2px 5px rgb(228, 225, 225); */
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin: 10px;
+    padding-bottom:20px;
+
+}
+.card-image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-name{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+.card-text{
+    font-family: 'Roboto slab',arial;
+    font-size: .95rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.card-btn{
+    align-self: center;
+    text-decoration: none;
+    background-color: #EF476F;
+    color: #F8FFE5;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 30px;
+    margin:20px 10px;
+    font-size: 12px;
+}
+.card-btn:hover{
+    background-color: #f15a7d;
+}
+
+.categories-heading {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 15px;
+    /* font-size: 1.4rem; */
+    border-bottom: 1px solid rgb(233, 233, 233);
+    margin: 40px 50px 5px;
+}
+@media screen and (max-width: 1290px) {
+    .sub-categories-card{
+        max-width: 30vw;
+}
+}
+
+@media screen and (max-width: 1090px) {
+    .sub-categories-card{
+        max-width: 35vw;
+}
+}
+@media screen and (max-width: 890px) {
+    .sub-categories-card{
+        max-width: 45vw;
+}
+}
+@media screen and (max-width: 690px) {
+    .sub-categories-card{
+        max-width: 60vw;
+}
+}
+@media screen and (max-width: 490px) {
+    .sub-categories-card{
+       max-width: 70vw;
+}
+}
+@media screen and (max-width: 390px) {
+    .sub-categories-card{
+       max-width: 80vw;
+}
+.card-image{
+    height: 40vh;
+}
+}

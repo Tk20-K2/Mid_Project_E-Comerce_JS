@@ -38,11 +38,9 @@ let dropDownMenu = document.getElementById('drop-down-menu')
 faBars.onclick=function(){
     if(dropDownMenu.style.transform=="translateX(0%)"){
         dropDownMenu.style="transform: translateX(-120%);"
-        console.log("if")
       }
   else{
     dropDownMenu.style="transform: translateX(0%);"
-    console.log("else")
         }
 }
 

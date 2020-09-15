@@ -5,7 +5,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-khaadi1.jpg",
     "rating":"3.8",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Khaadi",
     "sale":false
 },
@@ -16,7 +16,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-khaadi2.jpg",
     "rating":"3.5",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Khaadi",
     "sale":false
 },
@@ -28,7 +28,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-satrangi1.jpg",
     "rating":"4.9",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Satrangi",
     "sale":true
 },
@@ -39,7 +39,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-satrangi2.jpg",
     "rating":"4.8",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Satrangi",
     "sale":true
 },
@@ -51,7 +51,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-ss1.jpg",
     "rating":"4.4",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"SanaSafinaz",
     "sale":false
 },
@@ -62,7 +62,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-ss2.jpg",
     "rating":"4.1",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"SanaSafinaz",
     "sale":false
 },
@@ -74,7 +74,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-alkaram1.jpg",
     "rating":"4.9",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Alkaram",
     "sale":false
 },
@@ -85,7 +85,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-alkaram2.jpg",
     "rating":"3.9",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Alkaram",
     "sale":false
 },
@@ -96,7 +96,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-alkaram3.jpg",
     "rating":"4.0",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Alkaram",
     "sale":false
 },
@@ -107,7 +107,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-alkaram4.jpg",
     "rating":"4.2",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Alkaram",
     "sale":false
 },
@@ -118,7 +118,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-sapp1.jpg",
     "rating":"4.5",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Sapphire",
     "sale":false
 },
@@ -129,7 +129,7 @@
     "picture":"images/woman/poshak-e-khaas/pk-sapp2.jpg",
     "rating":"3.4",
     "category":"Woman",
-    "subCategory":"Poshak -e- Khaas",
+    "subCategory":"Poshak e Khaas",
     "brand":"Sapphire",
     "sale":false
 },
@@ -511,17 +511,6 @@
     "sale":false
 },
 {
-    "name":"Men's Acrylic Shawl - Mustard",
-    "disc":"Dimension: 108 x 52 Inches",
-    "price": 1399.00,
-    "picture":"images/man/urban-libaas/ul-shawl-chase2.jpg",
-    "rating":"",
-    "category":"Man",
-    "subCategory":"Urban Libaas",
-    "brand":"Chase Value",
-    "sale":false
-},
-{
     "name":"Black Suiting Fabric Handwork Prince Coat",
     "disc":"Formal Suiting",
     "price": 7500.00,
@@ -768,17 +757,6 @@
     "sale":true
 },
 {
-    "name":"SOFT",
-    "disc":"Soft TEES in Cotton Fabric Model is Wearing Medium Size. Model height: 6 feet The Price only for Shirt",
-    "price": 833.00,
-    "picture":"images/man/casual/btw-shirt9.jpg",
-    "rating":"",
-    "category":"Man",
-    "subCategory":"Casual",
-    "brand":"BTW|BY THE WAY",
-    "sale":false
-},
-{
     "name":"STAMP",
     "disc":"MATERIAL: 100% COTTON",
     "price": 1603.00,
@@ -865,19 +843,6 @@
     "category":"Man",
     "subCategory":"Casual",
     "brand":"BTW|BY THE WAY",
-    "sale":false
-},
-
-
-{
-    "name":"",
-    "disc":"",
-    "price": 45,
-    "picture":"images/man/unstitched",
-    "rating":"",
-    "category":"Man",
-    "subCategory":"Urban Libaas",
-    "brand":"J.",
     "sale":false
 }
 ]

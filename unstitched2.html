@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rangdey | Products</title>
+    <title>Rangdey | Men</title>
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/searchProducts.css">
+    <link rel="stylesheet" href="style/main-categories.css">
     <link rel="shortcut icon" href="logo/monogram.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b690895109.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
    <!-- header code  -->
    <header>
@@ -112,58 +115,97 @@
   <form  id="hiddenForm"  action="searchProducts.html" method="GET">
       <input type="hidden" id ="hiddenInput" name="product">
   </form>
-  <!-- header code end here  -->
+  <!-- header code end here  -->      
 
 
-    <div id="searchContentContainer"></div>
+      <div class="sub-category-container">
+        <div class="sub-categories-card">
+            <img src="images/woman/rozana/r-satrangi1-1.jpg"" class="card-image">
+            <div class="card-body">
+                <h5 class="card-name">rozana</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a class="card-btn" id="casual-filter" href="rozana.html">See More</a>
+            </div>
+        </div>
+
+        <div class="sub-categories-card">
+            <img src="images/woman/poshak-e-khaas/pk-satrangi1.jpg" alt="" class="card-image">
+            <div class="card-body">
+                <h5 class="card-name">Poshak e Khaas</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                    <a class="card-btn" id="casual-filter" href="Poshak e Khaas.html">See More</a>
+            </div>
+
+        </div>
+        <div class="sub-categories-card">
+            <img src="images/woman/unstitched/us-satrangi2.jpg" alt="" class="card-image">
+            <div class="card-body">
+                <h5 class="card-name">Unstitched</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                    <a class="card-btn" id="casual-filter" href="Unstitched2.html">See More</a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="categories-heading">You May Also Like</h3>
+    <div id="searchContentContainer">
+
+    </div>
+
+
+
 
     <!-- footer  -->
 
     <footer>
 
         <div class="footer-inner-div">
-          <img src="logo/white-text-logo.png" alt="Rangdey" class="footer-logo">
-          <div class="phone"><span>Phone</span><span>+92 21 345-753-979</span></div>
-          <div class="email"><span>Email</span><span> Rangdey@gmail.com</span></div>
-          <div class="icon">
-            <a href="rangdey/facebook.com"><i class="fab fa-facebook-square"></i> FACEBOOK</a>
-            <a href="rangdey/youtube.com"><i class="fab fa-youtube"></i> YOUTUBE</a>
-            <a href="rangdey/instagram.com"><i class="fab fa-instagram-square"></i> INSTAGRAM</a>
-          </div>
+            <img src="logo/white-text-logo.png" alt="Rangdey" class="footer-logo">
+            <div class="phone"><span>Phone</span><span>+92 21 345-753-979</span></div>
+            <div class="email"><span>Email</span><span> Rangdey@gmail.com</span></div>
+            <div class="icon">
+                <a href="rangdey/facebook.com"><i class="fab fa-facebook-square"></i> FACEBOOK</a>
+                <a href="rangdey/youtube.com"><i class="fab fa-youtube"></i> YOUTUBE</a>
+                <a href="rangdey/instagram.com"><i class="fab fa-instagram-square"></i> INSTAGRAM</a>
+            </div>
         </div>
 
         <div class="footer-inner-div">
-          <span class="footer-headings">INFORMATION</span>
-          <ul>
-            <a href="about us.html">About Us</a>
-            <a href="Terms & Conditions.html">Terms & Conditions</a>
-            <a href="shipping information.html">Shipping Information</a>
-          </ul>
+            <span class="footer-headings">INFORMATION</span>
+            <ul>
+                <a href="about us.html">About Us</a>
+                <a href="Terms & Conditions.html">Terms & Conditions</a>
+                <a href="shipping information.html">Shipping Information</a>
+            </ul>
         </div>
 
         <div class="footer-inner-div">
-          <span class="footer-headings">CUTOMER CARE</span>
-          <ul>
-            <a href="contact us" >Contact Us</a>
-            <a href="privicy policy">Privicy Policy</a>
-            <a href="retur & exchange">Return & Exchange Policy</a>
-          </ul>
+            <span class="footer-headings">CUTOMER CARE</span>
+            <ul>
+                <a href="contact us">Contact Us</a>
+                <a href="privicy policy">Privicy Policy</a>
+                <a href="retur & exchange">Return & Exchange Policy</a>
+            </ul>
         </div>
         <div class="footer-inner-div">
-          <span class="footer-headings">NEWSLETTER</span>
-          <input type="text" placeholder="Enter Your Email" id="footerInput">
-          <div class="payment">
-            <span>SECURE PAYMENT THROUGH <br>Cash On Delivery</span>
-          </div>
+            <span class="footer-headings">NEWSLETTER</span>
+            <input type="text" placeholder="Enter Your Email" id="footerInput">
+            <div class="payment">
+                <span>SECURE PAYMENT THROUGH <br>Cash On Delivery</span>
+            </div>
         </div>
-      </footer>
-      <div class="footer-end">Copyright Reserved © 2020 </div>
+    </footer>
+    <div class="footer-end">Copyright Reserved © 2020 </div>
 
-      <form  id="hiddenFormInfo"  action="redirectProductInfo.html" method="GET">
-        <input type="hidden" id ="hiddenInputInfo" name="product">
+    <form id="hiddenFormInfo" action="redirectProductInfo.html" method="GET">
+        <input type="hidden" id="hiddenInputInfo" name="product">
     </form>
     <!-- footer end -->
 </body>
+<script src="script/woman.js"></script>
 <script src="script/header.js"></script>
-<script src="script/searchProducts.js"></script>
+
 </html>
