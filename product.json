@@ -845,4 +845,193 @@
     "brand":"BTW|BY THE WAY",
     "sale":false
 }
+,
+ {
+     "name": "BROWN-LAWN-KURTI",
+     "disc": "Digital Printed Lawn Shirt With Button Detail",
+     "price": 1880.00,
+     "picture": "images/kid/eastern/e-bon1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": true
+ },
+ {
+     "name": "L-PINK-DOBBY-KURTI",
+     "disc": "Dobby Shirt Embroidery Lace Detail",
+     "price": 2980.00,
+     "picture": "images/kid/eastern/e-bon2.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": false
+ },
+ {
+     "name": "GREEN-LAWN-KURTI",
+     "disc": "Digital Printed Lawn Shirt In Frock Style",
+     "price": 1880.00,
+     "picture": "images/kid/eastern/e-bon3.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": true
+ },
+ {
+     "name": "MULTI-LAWN-KURTI",
+     "disc": "Digital Printed Lawn Shirt Frock Style Shirt With Gathers",
+     "price": 2030.00,
+     "picture": "images/kid/eastern/e-bon4.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": false
+ },
+ {
+     "name": "BLACK-DENIM-KURTI",
+     "disc": "One Piece Denim Shirt Embroidered Bunch On One Side Colored Stitches On Daman Gathers On Sleeves",
+     "price": 2980.00,
+     "picture": "images/kid/eastern/e-bon5.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": false
+ },
+ {
+     "name": "BLUE-DENIM-KURTI",
+     "disc": "Emboss Printing On Front And Back Body",
+     "price": 2980.00,
+     "picture": "images/kid/eastern/e-bon6.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Satrangi",
+     "sale": false
+ },
+ {
+     "name": "Kurta",
+     "disc": "Embellished Kurta Tops",
+     "price": 1795.00,
+     "picture": "images/kid/eastern/e-khaadi1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Khaadi",
+     "sale": false
+ },
+ {
+     "name": "Kurta Shalwar",
+     "disc": "Kids Signature Kurta Shalwar",
+     "price": 2595.00,
+     "picture": "images/kid/eastern/e-khaadi1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Khaadi",
+     "sale": false
+ },
+ {
+     "name": "JGKL-S-JK2-RF03-19-1542 FB/DYED INDIGO",
+     "disc": "Fabric: Lawn Product Category: Girls 2 Piece",
+     "price": 2190.00,
+     "picture": "images/kid/eastern/e-j1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "J.",
+     "sale": false
+ },
+ {
+     "name": "JGK-S-1975 FB/OFFWHITE",
+     "disc": "Fabric: Zari Product Category: Girls 3 Piece",
+     "price": 4943.00,
+     "picture": "images/kid/eastern/e-j2.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "J.",
+     "sale": false
+ },
+ {
+     "name": "JJIKS-S-37464/S20/JJ6837",
+     "disc": "Fabric: Cotton",
+     "price": 1343.00,
+     "picture": "images/kid/eastern/e-j2.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "J.",
+     "sale": false
+ },
+
+ {
+     "name": "Galaxy",
+     "disc": "An embroidered waistcoat is a must-have for any traditional event. The high-quality soft fabric will allow your little man to play around and look super-handsome.",
+     "price": 1748.00,
+     "picture": "images/kid/eastern/e-sapp1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Easrtern Wear",
+     "brand": "Sappihre",
+     "sale": true
+ },
+ {
+     "name": "JGLK-S-JK-RF05-19-9008 FB/RED CHECKS",
+     "disc": "Fabric: Cambric",
+     "price": 1418.00,
+     "picture": "images/kid/western/w-j1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Western Wear",
+     "brand": "J.",
+     "sale": true
+ },
+ {
+     "name": "Skin-Fit Twill Pants",
+     "disc": "Fabric: Twill",
+     "price": 745.00,
+     "picture": "images/kid/western/w-sapp1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Western Wear",
+     "brand": "Sappihre",
+     "sale": false
+ },
+ {
+     "name": "Striped Denim Shorts",
+     "disc": "Fabric: Denim",
+     "price": 495.00,
+     "picture": "images/kid/western/w-sapp2.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Western Wear",
+     "brand": "Sappihre",
+     "sale": false
+ },
+ {
+     "name": "Twin Pack - Printed T-Shirts",
+     "disc": "Fabric: Jersey",
+     "price": 795.00,
+     "picture": "images/kid/western/w-sapp3.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Western Wear",
+     "brand": "Sappihre",
+     "sale": true
+ },
+ {
+     "name": "Galaxy",
+     "disc": "An embroidered waistcoat is a must-have for any traditional event. The high-quality soft fabric will allow your little man to play around and look super-handsome.",
+     "price": 1748.00,
+     "picture": "images/kid/eastern/e-sapp1.jpg",
+     "rating": "4.0",
+     "category": "Kids",
+     "subCategory": "Eastern Wear",
+     "brand": "Sappihre",
+     "sale": false
+ }
 ]
