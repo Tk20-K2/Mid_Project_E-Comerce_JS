@@ -16,6 +16,14 @@ for (i = 0; i < deleteItem.length; i++) {
     });
 }
 
+const remove = (itemPrice, itemQty) => {
+    let productPrice = document.getElementById(itemPrice);
+    let productQty = document.getElementById(itemQty);
+    
+    productAmount.innerText = parseFloat(productAmount.innerText) - (parseInt(productPrice.innerText) * parseInt(productQty.value));
+    totalAmount.innerText = parseInt(productAmount.innerText) + parseInt(shippingCharge.innerText);
+}
+
 // Inc & Dec
 const decItemQuantity = (itemQty, itemPrice) => {
     let productQty = document.getElementById(itemQty);
