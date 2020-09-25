@@ -25,11 +25,9 @@ let faSearch = document.querySelector('.fa-search')
 let crossBtn = document.getElementById('cross-btn')
 faSearch.onclick = function(){
   searchCanvas.style="clip-path:circle(200% at 90% 8%);"
-  console.log("hi")
 }
 crossBtn.onclick = function(){
   searchCanvas.style="clip-path:circle(0% at 98% 8%);"
-  console.log("bi")
 }
 
 
@@ -127,5 +125,3 @@ if(countCartItems.innerText=="0"){
 else{
   countCartItems.style.display="flex"
 }
-
-console.log("im happy")

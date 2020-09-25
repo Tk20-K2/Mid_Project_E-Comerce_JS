@@ -53,7 +53,7 @@ fetch('product.json')
                             <span class="sale-name">${element.name}</span>
                         <div>
                             <span class="sale-price">RS. ${element.price}</span>
-                            <span class="sale-rating">${parseInt(element.rating)}☆</span>
+                            <span class="sale-rating">${element.rating}☆</span>
                             </div>
                             <span class="sale-brand">${element.brand}</span>
               </div> `

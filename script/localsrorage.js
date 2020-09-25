@@ -9,6 +9,7 @@ function addToCartBtn(){
                         "price":parseInt(storageData.price)*parseInt(quantspan.innerText),
                         "src":storageData.picture,
                         "quantity":quantspan.innerText,
+                        "brand":storageData.brand,
                         "isCheckOut":false
                     }
     

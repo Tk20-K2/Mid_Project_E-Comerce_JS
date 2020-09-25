@@ -1,4 +1,5 @@
 let mainCart = document.querySelector('.main_cart') 
+let emptyCart = document.querySelector('#emptyCart') 
 function fetchCartItems(){
 for(let i =0; i<localStorage.length;i++){
     let jsonData =JSON.parse(localStorage.getItem(localStorage.key(i)))
@@ -17,6 +18,7 @@ for(let i =0; i<localStorage.length;i++){
                 <div class="col-6 card-title">
                     <h1 class="mb-4 product-name">${jsonData.name}</h1>
                     <p class="mb-2"> ${jsonData.disc.slice(0, 100)}</p>
+                    <p class="mb-2" style="color:#34bdeb;"> ${jsonData.brand}</p>
                 </div>
                 <!-- Product Quantity -->
                 <div class="col-6">
@@ -39,10 +41,10 @@ for(let i =0; i<localStorage.length;i++){
                 </div>
             </div>
             <!-- Remove Item and WishList -->
-            <div class="row">
+            <div class="row center-dive">
                 <div class="col-8 d-flex justify-content-between remove_item">
                     <p><i class="fas fa-trash-alt del_btn" onclick="removeThisItem(this)"></i> Remove Item</p>
-                    <p><i class="fas fa-heart"></i> Move To WishList</p>
+                    <button id="addToCartButton"> CHECKOUT <i class="fas fa-check"></i></button>
                 </div>
                 <div class="col-4 d-flex justify-content-end product_price font-weight-bold">
                     <p>Rs. <span id="item_price1">${jsonData.price}</span></p>
@@ -59,23 +61,35 @@ for(let i =0; i<localStorage.length;i++){
     }      
     else{
   countCartItems.style.display="flex"
+    emptyCartfunc()
     }
 }}
 fetchCartItems()
 
+function emptyCartfunc(){
+    if(localStorage.length>0){
+        emptyCart.style.display="none"
+    }
+    else{
+    emptyCart.style.display="flex"
+    }
+}
+emptyCartfunc()
 
-let deleteItem = document.getElementsByClassName('del_btn');
-let productAmount = document.getElementById('prd_amt');
-let shippingCharge = document.getElementById('shipping_chrg');
-let totalAmount = document.getElementById('total_amt');
-let today = document.getElementById('today_date');
-let expectedDate = document.getElementById('expected_date');
 
 // Del Items
 function removeThisItem(element){
     localStorage.removeItem(element.parentElement.parentElement.parentElement.parentElement.children[0].children[0].children[0].innerText)
     mainCart.innerHTML=""
     fetchCartItems()
+    emptyCartfunc()
+    countCartItems.innerText=localStorage.length
+    if(countCartItems.innerText=="0"){
+        countCartItems.style.display="none"
+      }
+      else{
+        countCartItems.style.display="flex"
+      }
 }
 
 // Inc & Dec Quantity 
@@ -118,20 +132,7 @@ const incItemQuantity = (button) => {
 }
 
 
-// Delivery Date
-function loadPage() {
-    let todayDate = new Date();
-    let month = todayDate.getMonth() + 1;
-    let day = todayDate.getDay();
-    let year = todayDate.getFullYear();
-    today.innerText = (day + ' ' + month + ' ' + year);
 
-    let expDate = new Date();
-    let expMonth = expDate.getMonth() + 1;
-    let expDay = expDate.getDay() + 5;
-    let expYear = expDate.getFullYear();
-    expectedDate.innerText = (expDay + ' ' + expMonth + ' ' + expYear);
-}
 
 
 
