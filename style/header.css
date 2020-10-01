@@ -124,6 +124,7 @@ nav a:hover,.menu:hover{
     opacity: 0;
     transition: .7s ease;
     transform: translateY(20px);
+    z-index: -1;
 
 }
 .nav-drop-down a{
@@ -280,6 +281,7 @@ nav a:hover,.menu:hover{
 
 /* footer styling here */
 footer{
+    margin-top: 70vh;
     display: flex !important;
     justify-content: space-between;
     padding: 20px;

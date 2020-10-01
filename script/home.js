@@ -78,3 +78,8 @@ function redirectProductInfo(element){
     hiddenInputInfo.value=element.children[1].innerHTML
     hiddenFormInfo.submit()
 }
+
+
+if(localStorage.getItem('checkLogin') == null){
+    localStorage.setItem('checkLogin',false)
+}

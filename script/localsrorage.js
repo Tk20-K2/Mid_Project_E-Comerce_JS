@@ -1,5 +1,4 @@
 let cartButton =document.getElementById('cart-button')
-// localStorage.setItem("data" , "[]") 
 
 function addToCartBtn(){
     var a =
@@ -10,7 +9,15 @@ function addToCartBtn(){
                         "src":storageData.picture,
                         "quantity":quantspan.innerText,
                         "brand":storageData.brand,
-                        "isCheckOut":false
+                        "isCheckOut":false,
+                        "email":"",
+                        "fname":"",
+                        "lname":"",
+                        "address":"",
+                        "address2":"",
+                        "city":"",
+                        "postalCode":"",
+                        "phone":""
                     }
     
                 
@@ -19,13 +26,25 @@ function addToCartBtn(){
     localStorage.setItem(storageData.name, JSON.stringify(a))
     console.log(localStorage.length)
 
-    let countCartItems = document.getElementById('count-cart-items')
-    countCartItems.innerText=localStorage.length
+// cart counter 
+let checkoutCounter = 0
+let countCartItems = document.getElementById('count-cart-items')
 
-    if(countCartItems.innerText=="0"){
-        countCartItems.style.display="none"
-      }
-      else{
-        countCartItems.style.display="flex"
-      }
+function checkCount(){
+for(i=0;i<localStorage.length;i++){
+  if(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut ==false){
+    console.log(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut)
+    checkoutCounter++
+  }
+}}
+checkCount()
+
+countCartItems.innerText=checkoutCounter
+
+if(countCartItems.innerText=="0"){
+  countCartItems.style.display="none"
+}
+else{
+  countCartItems.style.display="flex"
+}
 }

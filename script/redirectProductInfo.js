@@ -117,7 +117,9 @@ fetch('product.json')
 
 
 function plusBtn(){
+    if(quantspan.innerText!="9"){
     quantspan.innerText=parseInt(quantspan.innerText)+1
+    }
     productPrice.innerText = parseInt( storageData.price)*parseInt(quantspan.innerText)
 }
 function minusBtn(){

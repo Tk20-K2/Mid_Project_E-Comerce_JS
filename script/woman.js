@@ -54,9 +54,19 @@ document.getElementById('cart-div').onclick = () =>{
     window.location="cart.html"
   }
   
+  let checkoutCounter = 0
   let countCartItems = document.getElementById('count-cart-items')
   
-  countCartItems.innerText=localStorage.length
+  function checkCount(){
+  for(i=0;i<localStorage.length;i++){
+    if(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut ==false){
+      console.log(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut)
+      checkoutCounter++
+    }
+  }}
+  checkCount()
+  
+  countCartItems.innerText=checkoutCounter
   
   if(countCartItems.innerText=="0"){
     countCartItems.style.display="none"
@@ -64,7 +74,6 @@ document.getElementById('cart-div').onclick = () =>{
   else{
     countCartItems.style.display="flex"
   }
-    
 
 
 
@@ -177,3 +186,17 @@ document.getElementById('cart-div').onclick = () =>{
    }
  }
  
+
+
+ let userIcon  = document.querySelector('.fa-user-circle')
+userIcon.onclick = ()=> {
+  window.location = "signup.html"
+}
+
+
+if(localStorage.getItem('users') ==null){
+  localStorage.setItem('users','[]')
+}
+if(localStorage.getItem('checkLogin') == null){
+  localStorage.setItem('checkLogin',false)
+}

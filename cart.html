@@ -135,6 +135,12 @@
     <div id="emptyCart">
         Cart Is Empty &nbsp; <i class="fas fa-sad-tear"></i>
     </div>
+
+    <!-- control bar -->
+    <div id="controls">
+        <span id="cartCon">Cart Items</span>
+        <span id="checkCon">Checkout Items</span>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 col-11 mx-auto">
@@ -145,37 +151,6 @@
                         <!-- 1st card item end -->
 
                     </div>
-                    <!-- Right side div -->
-                    <!-- <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
-                        <div class="p-3 shadow bg-white right_side">
-                            <h2 class="mb-5 product-name">The Total Amount Of</h2>
-                            <div class="d-flex justify-content-between price_indiv">
-                                <p>Product Amount</p>
-                                <p>Rs. <span id="prd_amt">0.00</span></p>
-                            </div>
-                            <div class="d-flex justify-content-between price_indiv">
-                                <p>Shipping Charge</p>
-                                <p>Rs. <span id="shipping_chrg">99</span></p>
-                            </div>
-                            <hr>
-                            <div class="d-flex justify-content-between font-weight-bold total_amt">
-                                <p>Total Amount(Inc. Tax)</p>
-                                <p>Rs. <span id="total_amt">0.00</span></p>
-                            </div>
-                            <button class="btn btn-primary text-uppercase">Checkout</button>
-                        </div> -->
-
-
-
-                        <!-- Shipping Days Section -->
-                        <!-- <div class="my-3 shadow p-3 bg-white">
-                            <div class="pt-4">
-                                <h5 class="mb-4">Expected Delivery Date</h5>
-                                <p>6 Working Day</p>
-                                <p><span id="today_date"> September 15 2020 </span> - <span id="expected_date">September
-                                        30 2020</span> </p>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -227,6 +202,10 @@
     <form id="hiddenFormInfo" action="redirectProductInfo.html" method="GET">
         <input type="hidden" id="hiddenInputInfo" name="product">
     </form>
+
+    <form  id="checkoutForm"  action="checkout.html" method="GET">
+        <input type="hidden" id ="checkoutInput" name="product" value="">
+     </form>
     <!-- footer end -->
 
     <script src="script/cart.js"></script>

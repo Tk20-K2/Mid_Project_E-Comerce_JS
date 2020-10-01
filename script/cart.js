@@ -1,9 +1,19 @@
 let mainCart = document.querySelector('.main_cart') 
 let emptyCart = document.querySelector('#emptyCart') 
-function fetchCartItems(){
+function fetchCartItems(boolean){
+    mainCart.innerHTML=""
+    let displayVar = "block"
+    let displayVar2 = "none"
+    if(boolean == false){
+        displayVar = "none"
+        displayVar2 = "block"
+    }
 for(let i =0; i<localStorage.length;i++){
+    if(localStorage.key(i) != 'users' && localStorage.key(i) != 'checkLogin'){
+      
+        if(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut !=boolean){
     let jsonData =JSON.parse(localStorage.getItem(localStorage.key(i)))
-        mainCart.innerHTML= mainCart.innerHTML+`
+    mainCart.innerHTML= mainCart.innerHTML+`
     <div class="card p-4">
     <div class="row">
         <!-- Card Image -->
@@ -21,7 +31,7 @@ for(let i =0; i<localStorage.length;i++){
                     <p class="mb-2" style="color:#34bdeb;"> ${jsonData.brand}</p>
                 </div>
                 <!-- Product Quantity -->
-                <div class="col-6">
+                <div class="col-6" style="display:${displayVar};">
                     <ul class="pagination justify-content-end set_quantity">
                         <li class="page-item">
                             <button class="page-link"
@@ -43,35 +53,44 @@ for(let i =0; i<localStorage.length;i++){
             <!-- Remove Item and WishList -->
             <div class="row center-dive">
                 <div class="col-8 d-flex justify-content-between remove_item">
-                    <p><i class="fas fa-trash-alt del_btn" onclick="removeThisItem(this)"></i> Remove Item</p>
-                    <button id="addToCartButton"> CHECKOUT <i class="fas fa-check"></i></button>
+                    <p style="display:${displayVar};"> <i class="fas fa-trash-alt del_btn" onclick="removeThisItem(this)"></i> Remove Item</p>
+                    <button id="addToCartButton" style="display:${displayVar};" onclick="checkoutBtn(this)"> CHECKOUT<i class="fas fa-check"></i></button>
                 </div>
                 <div class="col-4 d-flex justify-content-end product_price font-weight-bold">
                     <p>Rs. <span id="item_price1">${jsonData.price}</span></p>
                 </div>
             </div>
+
+            
+            <div style="display:${displayVar2};">
+            <span>Shipping Information</span>
+            <div class="shipping"><span class="shipping-span">Name</span> ${jsonData.fname}</div>
+            <div class="shipping"><span class="shipping-span">Address</span> ${jsonData.address}</div>
+            <div class="shipping"><span class="shipping-span">City</span> ${jsonData.city}</div>
+            <div class="shipping"><span class="shipping-span">Postal Code</span> ${jsonData.postalCode}</div>
+            <div class="shipping"><span class="shipping-span">Phone</span> ${jsonData.phone}</div>
+            <div class="shipping"><span class="shipping-span">Email</span> ${jsonData.email}</div>
+            </div>
+            
         </div>
     </div>
     </div><hr> `
-    let countCartItems  = document.getElementById('count-cart-items')
-    countCartItems.innerText=localStorage.length
-
-    if(countCartItems.innerText=="0"){
-  countCartItems.style.display="none"
-    }      
-    else{
-  countCartItems.style.display="flex"
-    emptyCartfunc()
-    }
+    
+emptyCartfunc()
 }}
-fetchCartItems()
+}}
+fetchCartItems(true)
+
 
 function emptyCartfunc(){
-    if(localStorage.length>0){
+    let controls = document.getElementById('controls')
+    if(localStorage.length>2){
         emptyCart.style.display="none"
+        controls.style.display="flex"
     }
     else{
     emptyCart.style.display="flex"
+    controls.style.display="none"
     }
 }
 emptyCartfunc()
@@ -81,15 +100,28 @@ emptyCartfunc()
 function removeThisItem(element){
     localStorage.removeItem(element.parentElement.parentElement.parentElement.parentElement.children[0].children[0].children[0].innerText)
     mainCart.innerHTML=""
-    fetchCartItems()
+    fetchCartItems(true)
     emptyCartfunc()
-    countCartItems.innerText=localStorage.length
+    let checkoutCounter = 0
+    let countCartItems = document.getElementById('count-cart-items')
+
+    function checkCount(){
+    for(i=0;i<localStorage.length;i++){
+    if(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut ==false){
+        console.log(JSON.parse(localStorage.getItem(localStorage.key(i))).isCheckOut)
+        checkoutCounter++
+    }
+    }}
+    checkCount()
+
+    countCartItems.innerText=checkoutCounter
+
     if(countCartItems.innerText=="0"){
-        countCartItems.style.display="none"
-      }
-      else{
-        countCartItems.style.display="flex"
-      }
+    countCartItems.style.display="none"
+    }
+    else{
+    countCartItems.style.display="flex"
+    }
 }
 
 // Inc & Dec Quantity 
@@ -131,10 +163,40 @@ const incItemQuantity = (button) => {
 
 }
 
+// click on checkout button 
 
 
+ 
+
+function checkoutBtn(button){
+    if(localStorage.getItem('checkLogin') == "false"){
+        window.location = "login.html"
+    }
+    else{
+        let checkOutName =  button.parentElement.parentElement.parentElement.children[0].children[0].children[0]
+        let checkoutInput = document.getElementById('checkoutInput')
+        let checkoutForm = document.getElementById('checkoutForm')
+        checkoutInput.value = checkOutName.innerText
+        checkoutForm.submit()
+    }
+}
 
 
+// Cart controls 
 
+let cartCon = document.getElementById('cartCon')
+let checkCon = document.getElementById('checkCon')
+
+
+cartCon.onclick = ()=>{
+    fetchCartItems(true)
+    cartCon.style.color = "#EF476F"
+    checkCon.style.color = "#000"
+}
+checkCon.onclick = ()=>{
+    fetchCartItems(false)
+    cartCon.style.color = "#000"
+    checkCon.style.color = "#EF476F"
+}
 
 

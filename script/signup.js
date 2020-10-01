@@ -13,7 +13,6 @@ form.addEventListener('submit', (event) => {
 
 const sendData = (usernameValue, submitRate, count) => {
     if (submitRate === count) {
-        alert('Registered Successful');
         swal("Welcome! " + usernameValue, "Registered Successful", "success");
         // location.href=`demo.html?username=${usernameValue}`;
     }
@@ -33,6 +32,8 @@ const successValidationMsg = (usernameValue) => {
             return false;
         }
     }
+    window.location = "login.html"
+
 }
 // More Email Validation
 const isEmail = (emailValue) => {
@@ -112,3 +113,4 @@ function setSuccessMsg(input) {
     const formControl = input.parentElement;
     formControl.className = "form-control success";
 }
+
