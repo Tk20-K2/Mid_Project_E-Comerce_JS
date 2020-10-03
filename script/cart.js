@@ -25,13 +25,13 @@ for(let i =0; i<localStorage.length;i++){
         <div class="col-md-8 col-11 mx-auto px-4 mt-2">
             <div class="row">
                 <!-- Product Name -->
-                <div class="col-6 card-title">
+                <div class="col-md-6 col-11 card-title">
                     <h1 class="mb-4 product-name">${jsonData.name}</h1>
                     <p class="mb-2"> ${jsonData.disc.slice(0, 100)}</p>
                     <p class="mb-2" style="color:#34bdeb;"> ${jsonData.brand}</p>
                 </div>
                 <!-- Product Quantity -->
-                <div class="col-6" style="display:${displayVar};">
+                <div class="col-md-6 col-11 " style="display:${displayVar};">
                     <ul class="pagination justify-content-end set_quantity">
                         <li class="page-item">
                             <button class="page-link"
@@ -52,15 +52,14 @@ for(let i =0; i<localStorage.length;i++){
             </div>
             <!-- Remove Item and WishList -->
             <div class="row center-dive">
-                <div class="col-8 d-flex justify-content-between remove_item">
+                <div class="col-md-8 col-11  d-flex justify-content-between remove_item">
                     <p style="display:${displayVar};"> <i class="fas fa-trash-alt del_btn" onclick="removeThisItem(this)"></i> Remove Item</p>
-                    <button id="addToCartButton" style="display:${displayVar};" onclick="checkoutBtn(this)"> CHECKOUT<i class="fas fa-check"></i></button>
+                    <button id="addToCartButton" style="display:${displayVar};" onclick="checkoutBtn(this)"> CHECKOUT<i class="fas fa-check mb-2 mb-lg-0 butn"></i></button>
                 </div>
-                <div class="col-4 d-flex justify-content-end product_price font-weight-bold">
+                <div class="col-md-4 col-11  d-flex justify-content-end product_price font-weight-bold">
                     <p>Rs. <span id="item_price1">${jsonData.price}</span></p>
                 </div>
             </div>
-
             
             <div style="display:${displayVar2};">
             <span>Shipping Information</span>
@@ -198,5 +197,3 @@ checkCon.onclick = ()=>{
     cartCon.style.color = "#000"
     checkCon.style.color = "#EF476F"
 }
-
-

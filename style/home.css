@@ -22,7 +22,6 @@
     padding: 2px;
 }
 
-
 /* women categories effect */
 
 .categories-overlay1,.categories-overlay2,.categories-overlay3{
@@ -231,6 +230,14 @@
 .blog-content img{
     width: 500px;
     padding: 20px;
+}
+.blog-content #img1{
+    border-right: 2px solid var(--color);
+    border-left: 2px solid var(--color);
+}
+.blog-content #img2{
+    border-top: 2px solid var(--color);
+    border-bottom: 2px solid var(--color);
 }
 .blog-links{
     position: absolute;

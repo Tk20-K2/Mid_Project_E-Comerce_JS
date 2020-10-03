@@ -19,7 +19,6 @@ fetch('product.json')
               imageSrc =element.picture
                storageData = element
             content.innerHTML=`
-
             
             <div class="img">
             <div class="img-prew">
@@ -46,7 +45,6 @@ fetch('product.json')
                     <span class="stock">in stock</span>
                 </h4>
                 <hr>
-
                 <h4 class="itemsLeft">
                     Limited Stock
                 </h4>
@@ -78,7 +76,6 @@ fetch('product.json')
                     </h4>
                 </div>
         </div>
-
             `
             
             quantspan = document.querySelector('#quantspan')
@@ -128,8 +125,5 @@ function minusBtn(){
     }
     productPrice.innerText = parseInt(storageData.price)*parseInt(quantspan.innerText)
 }
-
-
-
 
 

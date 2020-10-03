@@ -51,8 +51,8 @@ hr{
 .card{
     border: none !important;
 }
-.product_img{
-}
+/* .product_img{
+} */
 .prod_image{
     max-width: 200px !important;
     min-width: 200px !important;
@@ -168,4 +168,20 @@ hr{
     padding-top: 20px;
     font-size: 14px;
     font-weight: bold;
+}
+
+@media (max-width: 850px) {
+ul.pagination{
+    justify-content: center !important;
+}
+.remove_item{
+    display: block !important;
+    overflow: hidden;
+}
+/* p.del_btn,button.butn{
+    display: block !important;
+} */
+.product_price{
+    justify-content: center !important;
+}
 }

@@ -1,24 +1,6 @@
-prod name
-prod image
-
-name 
-phone number 
-email 
-country (option)
-city (option)
-adress 
-Payment Method  radio O Cash On Delivery
-
-product amoount Rs. 5590
-Shipping Charges rs 100
-Total Amount 
-coupon code TkTEAMAn apply
-
-proceed checkout 
-
-
-
-
-
-
-
+name
+quantity
+price
+is checkout 
+discription
+src

@@ -17,10 +17,14 @@
     margin: 5px;
     flex-shrink: 0;
     margin: 10px;
+    cursor: pointer;
 }
 .product-image{
     width: 100%;
     height: 350px;
+}
+.product-image:hover{
+    opacity: .85;
 }
 .product-name{
     font-family: 'Roboto slab',arial;

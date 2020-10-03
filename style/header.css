@@ -281,7 +281,7 @@ nav a:hover,.menu:hover{
 
 /* footer styling here */
 footer{
-    margin-top: 70vh;
+    margin-top: 50px;
     display: flex !important;
     justify-content: space-between;
     padding: 20px;

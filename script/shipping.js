@@ -79,6 +79,7 @@ function validation() {
         validCount++
     }
     addShippinInfo()
+    window.location ='index.html'
 
 }
 
@@ -141,6 +142,8 @@ function addShippinInfo(){
     oldprodData.price = prodTot.innerText
     oldprodData.isCheckOut = true
     localStorage.setItem(headValue,JSON.stringify(oldprodData))
-    window.location ='cart.html'
+    swal("Thank You " + oldprodData.fname, "Your order is successfully done", "success");
+    
     }
+
 }
